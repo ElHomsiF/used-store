@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏷️</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="eBazaar - Premium Online Marketplace & Real-Time Live Bidding Arcade. Discover rare collectibles, electronics, fashion, and compete in live auctions." />
+    <title>eBazaar | Live Auctions & Marketplace</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" aria-live="polite"></div>
+
+    <!-- Application Shell -->
+    <div id="app" class="app-shell">
+      <!-- Main Navigation Header rendered dynamically -->
+      <header id="main-header" class="site-header"></header>
+
+      <!-- Category Filter Navigation -->
+      <nav id="category-nav" class="category-bar" aria-label="Product Categories"></nav>
+
+      <!-- Main Marketplace View Container -->
+      <main id="main-content" class="site-main">
+        <!-- Hero & Arcade Mode Switcher -->
+        <section id="hero-banner" class="hero-section"></section>
+
+        <!-- Main Marketplace Section -->
+        <section id="marketplace-section" class="marketplace-container">
+          <!-- Active Filter Bar & View Toggle -->
+          <div id="filter-bar" class="filter-controls-bar"></div>
+
+          <!-- Product Catalog Grid -->
+          <div id="product-grid" class="products-grid" role="region" aria-label="Auction Catalog"></div>
+          
+          <!-- Empty State -->
+          <div id="empty-state" class="empty-state-card hidden"></div>
+        </section>
+
+        <!-- Gamified Bidding Frenzy Arcade View (Hidden by default) -->
+        <section id="bidding-arcade-section" class="arcade-section hidden"></section>
+      </main>
+
+      <!-- Site Footer -->
+      <footer id="main-footer" class="site-footer"></footer>
+    </div>
+
+    <!-- Modal Containers -->
+    <div id="modal-container"></div>
+    <div id="drawer-container"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
